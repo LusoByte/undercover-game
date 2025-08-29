@@ -1,0 +1,1166 @@
+[
+  {
+    "civilian": "Gato",
+    "undercover": "Cão"
+  },
+  {
+    "civilian": "Leão",
+    "undercover": "Tigre"
+  },
+  {
+    "civilian": "Elefante",
+    "undercover": "Rinoceronte"
+  },
+  {
+    "civilian": "Peixe",
+    "undercover": "Baleia"
+  },
+  {
+    "civilian": "Coelho",
+    "undercover": "Rato"
+  },
+  {
+    "civilian": "Cavalo",
+    "undercover": "Burro"
+  },
+  {
+    "civilian": "Águia",
+    "undercover": "Falcão"
+  },
+  {
+    "civilian": "Serpente",
+    "undercover": "Lagarto"
+  },
+  {
+    "civilian": "Urso",
+    "undercover": "Lobo"
+  },
+  {
+    "civilian": "Macaco",
+    "undercover": "Chimpanzé"
+  },
+  {
+    "civilian": "Pizza",
+    "undercover": "Hambúrguer"
+  },
+  {
+    "civilian": "Massa",
+    "undercover": "Arroz"
+  },
+  {
+    "civilian": "Maçã",
+    "undercover": "Laranja"
+  },
+  {
+    "civilian": "Pão",
+    "undercover": "Bolo"
+  },
+  {
+    "civilian": "Queijo",
+    "undercover": "Manteiga"
+  },
+  {
+    "civilian": "Frango",
+    "undercover": "Peru"
+  },
+  {
+    "civilian": "Batata",
+    "undercover": "Cenoura"
+  },
+  {
+    "civilian": "Chocolate",
+    "undercover": "Caramelo"
+  },
+  {
+    "civilian": "Café",
+    "undercover": "Chá"
+  },
+  {
+    "civilian": "Café",
+    "undercover": "Leite"
+  },
+  {
+    "civilian": "Gelado",
+    "undercover": "Sorvete"
+  },
+  {
+    "civilian": "Cadeira",
+    "undercover": "Mesa"
+  },
+  {
+    "civilian": "Caneta",
+    "undercover": "Lápis"
+  },
+  {
+    "civilian": "Relógio",
+    "undercover": "Despertador"
+  },
+  {
+    "civilian": "Telemóvel",
+    "undercover": "Tablet"
+  },
+  {
+    "civilian": "Chave",
+    "undercover": "Fechadura"
+  },
+  {
+    "civilian": "Espelho",
+    "undercover": "Janela"
+  },
+  {
+    "civilian": "Livro",
+    "undercover": "Revista"
+  },
+  {
+    "civilian": "Óculos",
+    "undercover": "Lentes"
+  },
+  {
+    "civilian": "Carro",
+    "undercover": "Autocarro"
+  },
+  {
+    "civilian": "Bicicleta",
+    "undercover": "Motocicleta"
+  },
+  {
+    "civilian": "Professor",
+    "undercover": "Estudante"
+  },
+  {
+    "civilian": "Médico",
+    "undercover": "Enfermeiro"
+  },
+  {
+    "civilian": "Polícia",
+    "undercover": "Bombeiro"
+  },
+  {
+    "civilian": "Cozinheiro",
+    "undercover": "Empregado"
+  },
+  {
+    "civilian": "Actor",
+    "undercover": "Cantor"
+  },
+  {
+    "civilian": "Piloto",
+    "undercover": "Comissário"
+  },
+  {
+    "civilian": "Juiz",
+    "undercover": "Advogado"
+  },
+  {
+    "civilian": "Dentista",
+    "undercover": "Veterinário"
+  },
+  {
+    "civilian": "Jornalista",
+    "undercover": "Escritor"
+  },
+  {
+    "civilian": "Engenheiro",
+    "undercover": "Arquitecto"
+  },
+  {
+    "civilian": "Futebol",
+    "undercover": "Basquetebol"
+  },
+  {
+    "civilian": "Ténis",
+    "undercover": "Badminton"
+  },
+  {
+    "civilian": "Natação",
+    "undercover": "Mergulho"
+  },
+  {
+    "civilian": "Corrida",
+    "undercover": "Caminhada"
+  },
+  {
+    "civilian": "Boxe",
+    "undercover": "Karaté"
+  },
+  {
+    "civilian": "Golf",
+    "undercover": "Hóquei"
+  },
+  {
+    "civilian": "Voleibol",
+    "undercover": "Andebol"
+  },
+  {
+    "civilian": "Ciclismo",
+    "undercover": "Motociclismo"
+  },
+  {
+    "civilian": "Esqui",
+    "undercover": "Snowboard"
+  },
+  {
+    "civilian": "Ginástica",
+    "undercover": "Dança"
+  },
+  {
+    "civilian": "Escola",
+    "undercover": "Universidade"
+  },
+  {
+    "civilian": "Hospital",
+    "undercover": "Farmácia"
+  },
+  {
+    "civilian": "Praia",
+    "undercover": "Montanha"
+  },
+  {
+    "civilian": "Montanha",
+    "undercover": "Colina"
+  },
+  {
+    "civilian": "Cinema",
+    "undercover": "Teatro"
+  },
+  {
+    "civilian": "Restaurante",
+    "undercover": "Café"
+  },
+  {
+    "civilian": "Banco",
+    "undercover": "Correios"
+  },
+  {
+    "civilian": "Museu",
+    "undercover": "Galeria"
+  },
+  {
+    "civilian": "Igreja",
+    "undercover": "Capela"
+  },
+  {
+    "civilian": "Parque",
+    "undercover": "Jardim"
+  },
+  {
+    "civilian": "Vermelho",
+    "undercover": "Cor-de-rosa"
+  },
+  {
+    "civilian": "Azul",
+    "undercover": "Verde"
+  },
+  {
+    "civilian": "Amarelo",
+    "undercover": "Laranja"
+  },
+  {
+    "civilian": "Preto",
+    "undercover": "Cinzento"
+  },
+  {
+    "civilian": "Branco",
+    "undercover": "Bege"
+  },
+  {
+    "civilian": "Roxo",
+    "undercover": "Violeta"
+  },
+  {
+    "civilian": "Castanho",
+    "undercover": "Dourado"
+  },
+  {
+    "civilian": "Turquesa",
+    "undercover": "Azul-claro"
+  },
+  {
+    "civilian": "Magenta",
+    "undercover": "Fúcsia"
+  },
+  {
+    "civilian": "Marfim",
+    "undercover": "Creme"
+  },
+  {
+    "civilian": "Feliz",
+    "undercover": "Alegre"
+  },
+  {
+    "civilian": "Triste",
+    "undercover": "Melancólico"
+  },
+  {
+    "civilian": "Zangado",
+    "undercover": "Irritado"
+  },
+  {
+    "civilian": "Medo",
+    "undercover": "Pânico"
+  },
+  {
+    "civilian": "Surpreso",
+    "undercover": "Espantado"
+  },
+  {
+    "civilian": "Nervoso",
+    "undercover": "Ansioso"
+  },
+  {
+    "civilian": "Calmo",
+    "undercover": "Relaxado"
+  },
+  {
+    "civilian": "Confiante",
+    "undercover": "Seguro"
+  },
+  {
+    "civilian": "Envergonhado",
+    "undercover": "Tímido"
+  },
+  {
+    "civilian": "Orgulhoso",
+    "undercover": "Vaidoso"
+  },
+  {
+    "civilian": "Sol",
+    "undercover": "Calor"
+  },
+  {
+    "civilian": "Chuva",
+    "undercover": "Tempestade"
+  },
+  {
+    "civilian": "Neve",
+    "undercover": "Gelo"
+  },
+  {
+    "civilian": "Vento",
+    "undercover": "Brisa"
+  },
+  {
+    "civilian": "Nuvem",
+    "undercover": "Nevoeiro"
+  },
+  {
+    "civilian": "Relâmpago",
+    "undercover": "Trovão"
+  },
+  {
+    "civilian": "Arco-íris",
+    "undercover": "Aurora"
+  },
+  {
+    "civilian": "Manhã",
+    "undercover": "Tarde"
+  },
+  {
+    "civilian": "Primavera",
+    "undercover": "Verão"
+  },
+  {
+    "civilian": "Inverno",
+    "undercover": "Outono"
+  },
+  {
+    "civilian": "Computador",
+    "undercover": "Portátil"
+  },
+  {
+    "civilian": "Internet",
+    "undercover": "Wi-Fi"
+  },
+  {
+    "civilian": "Website",
+    "undercover": "Aplicação"
+  },
+  {
+    "civilian": "Email",
+    "undercover": "Mensagem"
+  },
+  {
+    "civilian": "Rato",
+    "undercover": "Teclado"
+  },
+  {
+    "civilian": "Ecrã",
+    "undercover": "Monitor"
+  },
+  {
+    "civilian": "Câmara",
+    "undercover": "Vídeo"
+  },
+  {
+    "civilian": "Auscultadores",
+    "undercover": "Altifalantes"
+  },
+  {
+    "civilian": "Carregador",
+    "undercover": "Bateria"
+  },
+  {
+    "civilian": "Software",
+    "undercover": "Programa"
+  },
+  {
+    "civilian": "Guitarra",
+    "undercover": "Piano"
+  },
+  {
+    "civilian": "Bateria",
+    "undercover": "Percussão"
+  },
+  {
+    "civilian": "Violino",
+    "undercover": "Violoncelo"
+  },
+  {
+    "civilian": "Canção",
+    "undercover": "Melodia"
+  },
+  {
+    "civilian": "Rock",
+    "undercover": "Pop"
+  },
+  {
+    "civilian": "Jazz",
+    "undercover": "Blues"
+  },
+  {
+    "civilian": "Concerto",
+    "undercover": "Festival"
+  },
+  {
+    "civilian": "Compositor",
+    "undercover": "Músico"
+  },
+  {
+    "civilian": "Álbum",
+    "undercover": "Single"
+  },
+  {
+    "civilian": "Microfone",
+    "undercover": "Amplificador"
+  },
+  {
+    "civilian": "Sala",
+    "undercover": "Quarto"
+  },
+  {
+    "civilian": "Cozinha",
+    "undercover": "Casa-de-banho"
+  },
+  {
+    "civilian": "Porta",
+    "undercover": "Portão"
+  },
+  {
+    "civilian": "Teto",
+    "undercover": "Chão"
+  },
+  {
+    "civilian": "Parede",
+    "undercover": "Muro"
+  },
+  {
+    "civilian": "Escada",
+    "undercover": "Elevador"
+  },
+  {
+    "civilian": "Varanda",
+    "undercover": "Terraço"
+  },
+  {
+    "civilian": "Garagem",
+    "undercover": "Sótão"
+  },
+  {
+    "civilian": "Jardim",
+    "undercover": "Quintal"
+  },
+  {
+    "civilian": "Apartamento",
+    "undercover": "Moradia"
+  },
+  {
+    "civilian": "Camisa",
+    "undercover": "T-shirt"
+  },
+  {
+    "civilian": "Calças",
+    "undercover": "Calções"
+  },
+  {
+    "civilian": "Sapatos",
+    "undercover": "Sapatilhas"
+  },
+  {
+    "civilian": "Casaco",
+    "undercover": "Camisola"
+  },
+  {
+    "civilian": "Chapéu",
+    "undercover": "Boné"
+  },
+  {
+    "civilian": "Saia",
+    "undercover": "Vestido"
+  },
+  {
+    "civilian": "Meias",
+    "undercover": "Collants"
+  },
+  {
+    "civilian": "Luvas",
+    "undercover": "Mitenes"
+  },
+  {
+    "civilian": "Fato",
+    "undercover": "Smoking"
+  },
+  {
+    "civilian": "Pijama",
+    "undercover": "Robe"
+  },
+  {
+    "civilian": "Avião",
+    "undercover": "Helicóptero"
+  },
+  {
+    "civilian": "Comboio",
+    "undercover": "Metro"
+  },
+  {
+    "civilian": "Barco",
+    "undercover": "Iate"
+  },
+  {
+    "civilian": "Táxi",
+    "undercover": "Uber"
+  },
+  {
+    "civilian": "Camião",
+    "undercover": "Carrinha"
+  },
+  {
+    "civilian": "Scooter",
+    "undercover": "Trotineta"
+  },
+  {
+    "civilian": "Elevador",
+    "undercover": "Escada-rolante"
+  },
+  {
+    "civilian": "Paragem",
+    "undercover": "Estação"
+  },
+  {
+    "civilian": "Bilhete",
+    "undercover": "Passe"
+  },
+  {
+    "civilian": "Estrada",
+    "undercover": "Autoestrada"
+  },
+  {
+    "civilian": "Água",
+    "undercover": "Sumo"
+  },
+  {
+    "civilian": "Vinho",
+    "undercover": "Cerveja"
+  },
+  {
+    "civilian": "Refrigerante",
+    "undercover": "Gasosa"
+  },
+  {
+    "civilian": "Leite",
+    "undercover": "Iogurte"
+  },
+  {
+    "civilian": "Whisky",
+    "undercover": "Vodka"
+  },
+  {
+    "civilian": "Cappuccino",
+    "undercover": "Expresso"
+  },
+  {
+    "civilian": "Smoothie",
+    "undercover": "Batido"
+  },
+  {
+    "civilian": "Champanhe",
+    "undercover": "Espumante"
+  },
+  {
+    "civilian": "Limonada",
+    "undercover": "Laranjada"
+  },
+  {
+    "civilian": "Tisana",
+    "undercover": "Infusão"
+  },
+  {
+    "civilian": "Círculo",
+    "undercover": "Oval"
+  },
+  {
+    "civilian": "Quadrado",
+    "undercover": "Retângulo"
+  },
+  {
+    "civilian": "Triângulo",
+    "undercover": "Pirâmide"
+  },
+  {
+    "civilian": "Esfera",
+    "undercover": "Cubo"
+  },
+  {
+    "civilian": "Linha",
+    "undercover": "Curva"
+  },
+  {
+    "civilian": "Hexágono",
+    "undercover": "Octógono"
+  },
+  {
+    "civilian": "Estrela",
+    "undercover": "Cruz"
+  },
+  {
+    "civilian": "Cilindro",
+    "undercover": "Cone"
+  },
+  {
+    "civilian": "Rombo",
+    "undercover": "Losango"
+  },
+  {
+    "civilian": "Martelo",
+    "undercover": "Chave-inglesa"
+  },
+  {
+    "civilian": "Parafuso",
+    "undercover": "Prego"
+  },
+  {
+    "civilian": "Serra",
+    "undercover": "Broca"
+  },
+  {
+    "civilian": "Alicate",
+    "undercover": "Tenaz"
+  },
+  {
+    "civilian": "Régua",
+    "undercover": "Esquadro"
+  },
+  {
+    "civilian": "Tesoura",
+    "undercover": "X-ato"
+  },
+  {
+    "civilian": "Pincel",
+    "undercover": "Rolo"
+  },
+  {
+    "civilian": "Pá",
+    "undercover": "Enxada"
+  },
+  {
+    "civilian": "Lanterna",
+    "undercover": "Vela"
+  },
+  {
+    "civilian": "Corda",
+    "undercover": "Cabo"
+  },
+  {
+    "civilian": "Mão",
+    "undercover": "Pé"
+  },
+  {
+    "civilian": "Olho",
+    "undercover": "Orelha"
+  },
+  {
+    "civilian": "Boca",
+    "undercover": "Nariz"
+  },
+  {
+    "civilian": "Braço",
+    "undercover": "Perna"
+  },
+  {
+    "civilian": "Dedo",
+    "undercover": "Dedo-do-pé"
+  },
+  {
+    "civilian": "Cabelo",
+    "undercover": "Barba"
+  },
+  {
+    "civilian": "Coração",
+    "undercover": "Pulmão"
+  },
+  {
+    "civilian": "Joelho",
+    "undercover": "Cotovelo"
+  },
+  {
+    "civilian": "Ombro",
+    "undercover": "Anca"
+  },
+  {
+    "civilian": "Pescoço",
+    "undercover": "Cintura"
+  },
+  {
+    "civilian": "Árvore",
+    "undercover": "Arbusto"
+  },
+  {
+    "civilian": "Flor",
+    "undercover": "Folha"
+  },
+  {
+    "civilian": "Rio",
+    "undercover": "Lago"
+  },
+  {
+    "civilian": "Mar",
+    "undercover": "Oceano"
+  },
+  {
+    "civilian": "Pedra",
+    "undercover": "Rocha"
+  },
+  {
+    "civilian": "Relva",
+    "undercover": "Musgo"
+  },
+  {
+    "civilian": "Deserto",
+    "undercover": "Floresta"
+  },
+  {
+    "civilian": "Ilha",
+    "undercover": "Península"
+  },
+  {
+    "civilian": "Vale",
+    "undercover": "Planície"
+  },
+  {
+    "civilian": "Caverna",
+    "undercover": "Gruta"
+  },
+  {
+    "civilian": "Soma",
+    "undercover": "Multiplicação"
+  },
+  {
+    "civilian": "Fração",
+    "undercover": "Decimal"
+  },
+  {
+    "civilian": "Par",
+    "undercover": "Ímpar"
+  },
+  {
+    "civilian": "Positivo",
+    "undercover": "Negativo"
+  },
+  {
+    "civilian": "Maior",
+    "undercover": "Menor"
+  },
+  {
+    "civilian": "Ângulo",
+    "undercover": "Grau"
+  },
+  {
+    "civilian": "Perímetro",
+    "undercover": "Área"
+  },
+  {
+    "civilian": "Gráfico",
+    "undercover": "Tabela"
+  },
+  {
+    "civilian": "Equação",
+    "undercover": "Fórmula"
+  },
+  {
+    "civilian": "Estatística",
+    "undercover": "Probabilidade"
+  },
+  {
+    "civilian": "Teste",
+    "undercover": "Exame"
+  },
+  {
+    "civilian": "Caderno",
+    "undercover": "Bloco"
+  },
+  {
+    "civilian": "Quadro",
+    "undercover": "Projetor"
+  },
+  {
+    "civilian": "Biblioteca",
+    "undercover": "Laboratório"
+  },
+  {
+    "civilian": "Recreio",
+    "undercover": "Intervalo"
+  },
+  {
+    "civilian": "Diploma",
+    "undercover": "Certificado"
+  },
+  {
+    "civilian": "Turma",
+    "undercover": "Classe"
+  },
+  {
+    "civilian": "Disciplina",
+    "undercover": "Matéria"
+  },
+  {
+    "civilian": "Trabalho",
+    "undercover": "Projeto"
+  },
+  {
+    "civilian": "Nota",
+    "undercover": "Classificação"
+  },
+  {
+    "civilian": "Filme",
+    "undercover": "Série"
+  },
+  {
+    "civilian": "Jogo",
+    "undercover": "Brincadeira"
+  },
+  {
+    "civilian": "Romance",
+    "undercover": "Comédia"
+  },
+  {
+    "civilian": "Puzzle",
+    "undercover": "Charada"
+  },
+  {
+    "civilian": "Festa",
+    "undercover": "Celebração"
+  },
+  {
+    "civilian": "Palhaço",
+    "undercover": "Mágico"
+  },
+  {
+    "civilian": "Circo",
+    "undercover": "Carnaval"
+  },
+  {
+    "civilian": "Dança",
+    "undercover": "Canto"
+  },
+  {
+    "civilian": "Comédia",
+    "undercover": "Drama"
+  },
+  {
+    "civilian": "Ação",
+    "undercover": "Aventura"
+  },
+  {
+    "civilian": "Pai",
+    "undercover": "Avô"
+  },
+  {
+    "civilian": "Mãe",
+    "undercover": "Avó"
+  },
+  {
+    "civilian": "Irmão",
+    "undercover": "Primo"
+  },
+  {
+    "civilian": "Irmã",
+    "undercover": "Prima"
+  },
+  {
+    "civilian": "Filho",
+    "undercover": "Sobrinho"
+  },
+  {
+    "civilian": "Filha",
+    "undercover": "Sobrinha"
+  },
+  {
+    "civilian": "Marido",
+    "undercover": "Namorado"
+  },
+  {
+    "civilian": "Esposa",
+    "undercover": "Namorada"
+  },
+  {
+    "civilian": "Tio",
+    "undercover": "Padrinho"
+  },
+  {
+    "civilian": "Tia",
+    "undercover": "Madrinha"
+  },
+  {
+    "civilian": "Comprimido",
+    "undercover": "Cápsula"
+  },
+  {
+    "civilian": "Injeção",
+    "undercover": "Vacina"
+  },
+  {
+    "civilian": "Penso",
+    "undercover": "Gaze"
+  },
+  {
+    "civilian": "Termómetro",
+    "undercover": "Estetoscópio"
+  },
+  {
+    "civilian": "Raio-X",
+    "undercover": "Ecografia"
+  },
+  {
+    "civilian": "Cirurgia",
+    "undercover": "Operação"
+  },
+  {
+    "civilian": "Sintoma",
+    "undercover": "Doença"
+  },
+  {
+    "civilian": "Tratamento",
+    "undercover": "Cura"
+  },
+  {
+    "civilian": "Prevenção",
+    "undercover": "Diagnóstico"
+  },
+  {
+    "civilian": "Emergência",
+    "undercover": "Urgência"
+  },
+  {
+    "civilian": "Euro",
+    "undercover": "Dólar"
+  },
+  {
+    "civilian": "Moeda",
+    "undercover": "Nota"
+  },
+  {
+    "civilian": "Cartão",
+    "undercover": "Dinheiro"
+  },
+  {
+    "civilian": "Banco",
+    "undercover": "ATM"
+  },
+  {
+    "civilian": "Poupança",
+    "undercover": "Investimento"
+  },
+  {
+    "civilian": "Compra",
+    "undercover": "Venda"
+  },
+  {
+    "civilian": "Barato",
+    "undercover": "Caro"
+  },
+  {
+    "civilian": "Desconto",
+    "undercover": "Promoção"
+  },
+  {
+    "civilian": "Fatura",
+    "undercover": "Recibo"
+  },
+  {
+    "civilian": "Empréstimo",
+    "undercover": "Crédito"
+  },
+  {
+    "civilian": "Falar",
+    "undercover": "Sussurrar"
+  },
+  {
+    "civilian": "Gritar",
+    "undercover": "Berrar"
+  },
+  {
+    "civilian": "Perguntar",
+    "undercover": "Responder"
+  },
+  {
+    "civilian": "Carta",
+    "undercover": "Postal"
+  },
+  {
+    "civilian": "Telefonema",
+    "undercover": "Videochamada"
+  },
+  {
+    "civilian": "Conversação",
+    "undercover": "Diálogo"
+  },
+  {
+    "civilian": "Discussão",
+    "undercover": "Debate"
+  },
+  {
+    "civilian": "Acordo",
+    "undercover": "Compromisso"
+  },
+  {
+    "civilian": "Promessa",
+    "undercover": "Juramento"
+  },
+  {
+    "civilian": "Segredo",
+    "undercover": "Mistério"
+  },
+  {
+    "civilian": "Elevador",
+    "undercover": "Escadas"
+  },
+  {
+    "civilian": "Semáforo",
+    "undercover": "Rotunda"
+  },
+  {
+    "civilian": "Supermercado",
+    "undercover": "Mercearia"
+  },
+  {
+    "civilian": "Escritório",
+    "undercover": "Fábrica"
+  },
+  {
+    "civilian": "Hotel",
+    "undercover": "Pensão"
+  },
+  {
+    "civilian": "Aeroporto",
+    "undercover": "Estação"
+  },
+  {
+    "civilian": "Polícia",
+    "undercover": "Segurança"
+  },
+  {
+    "civilian": "Rádio",
+    "undercover": "Televisão"
+  },
+  {
+    "civilian": "Jornal",
+    "undercover": "Internet"
+  },
+  {
+    "civilian": "Fotografia",
+    "undercover": "Pintura"
+  },
+  {
+    "civilian": "Escultura",
+    "undercover": "Desenho"
+  },
+  {
+    "civilian": "Guitarra",
+    "undercover": "Baixo"
+  },
+  {
+    "civilian": "Ópera",
+    "undercover": "Musical"
+  },
+  {
+    "civilian": "Ballet",
+    "undercover": "Dança"
+  },
+  {
+    "civilian": "Prémio",
+    "undercover": "Medalha"
+  },
+  {
+    "civilian": "Vitória",
+    "undercover": "Conquista"
+  },
+  {
+    "civilian": "Competição",
+    "undercover": "Torneio"
+  },
+  {
+    "civilian": "Treino",
+    "undercover": "Ensaio"
+  },
+  {
+    "civilian": "Hobby",
+    "undercover": "Passatempo"
+  },
+  {
+    "civilian": "Férias",
+    "undercover": "Feriado"
+  },
+  {
+    "civilian": "Viagem",
+    "undercover": "Excursão"
+  },
+  {
+    "civilian": "Mala",
+    "undercover": "Mochila"
+  },
+  {
+    "civilian": "Casa",
+    "undercover": "Tenda"
+  },
+  {
+    "civilian": "Carro",
+    "undercover": "Bicicleta"
+  },
+  {
+    "civilian": "Telefone",
+    "undercover": "Televisão"
+  },
+  {
+    "civilian": "Livro",
+    "undercover": "Jornal"
+  },
+  {
+    "civilian": "Mesa",
+    "undercover": "Cadeira"
+  },
+  {
+    "civilian": "Porta",
+    "undercover": "Janela"
+  },
+  {
+    "civilian": "Luz",
+    "undercover": "Sombra"
+  },
+  {
+    "civilian": "Fogo",
+    "undercover": "Água"
+  },
+  {
+    "civilian": "Terra",
+    "undercover": "Ar"
+  }
+]
