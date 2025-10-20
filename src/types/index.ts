@@ -25,6 +25,8 @@ export interface GameSession {
 }
 
 export interface AppProps {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   Component: React.ComponentType<any>;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   pageProps: any;
 }
