@@ -1,0 +1,50 @@
+name: CI (PR -> develop) + Staging deploy
+
+on:
+  pull_request:
+    branches: [develop] # run PR checks when target is develop
+    types: [opened, reopened, synchronize, ready_for_review]
+  push:
+    branches: [develop] # on merge to develop, run integration + staging deploy
+
+jobs:
+  pr-checks:
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 23.x
+          cache: 'npm'
+      - run: npm ci
+      - run: npm run lint --if-present
+      - run: npm run type-check --if-present
+      - run: npm test -- --coverage --watchAll=false
+      - run: npm run build --if-present
+
+  integration-and-deploy:
+    if: github.event_name == 'push'
+    needs: pr-checks
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 23.x
+          cache: 'npm'
+      - run: npm ci
+      - run: npm run build
+      # Run integration / E2E tests against built app or a test server
+      - name: Start server in background
+        run: npm run start & sleep 5
+      - name: Run integration tests
+        run: npm run e2e --if-present
+      # Optional: Deploy to Vercel staging
+      - name: Deploy to Vercel (staging)
+        uses: amondnet/vercel-action@v21
+        with:
+          vercel-token: ${{ secrets.VERCEL_TOKEN }}
+          vercel-org-id: ${{ secrets.VERCEL_ORG_ID }}
+          vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID }}
+          vercel-args: '--prod --confirm' # change to omit --prod if you want preview/staging
