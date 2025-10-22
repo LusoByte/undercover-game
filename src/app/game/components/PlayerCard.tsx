@@ -1,0 +1,34 @@
+'use client';
+import React from 'react';
+import type { PlayerWithRole } from '../types.d';
+
+export default React.memo(function PlayerCard({
+  player,
+  index,
+  onReveal,
+}: {
+  player: PlayerWithRole;
+  index: number;
+  onReveal: (i: number) => void;
+}) {
+  return (
+    <div
+      key={player.id}
+      className={`bg-white/10 rounded-lg p-4 text-center cursor-pointer transition-all hover:scale-105 ${player.revealed ? 'ring-2 ring-green-400 bg-green-900/20' : 'hover:bg-white/20'}`}
+      onClick={() => !player.revealed && onReveal(index)}
+    >
+      <div className="font-medium text-lg mb-2">{player.name}</div>
+      {player.revealed ? (
+        <div className="space-y-2">
+          <div
+            className={`text-sm px-2 py-1 rounded-full ${player.role === 'undercover' ? 'bg-red-600' : player.role === 'mrwhite' ? 'bg-yellow-600' : 'bg-green-600'}`}
+          >
+            {player.role === 'undercover' ? 'Undercover' : player.role === 'mrwhite' ? 'Mr. White' : 'Civilian'}
+          </div>
+        </div>
+      ) : (
+        <div className="text-white/60">Click to reveal</div>
+      )}
+    </div>
+  );
+});
