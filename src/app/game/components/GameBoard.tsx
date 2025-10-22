@@ -22,13 +22,11 @@ export default function GameBoard() {
   });
   const [playConfetti, setPlayConfetti] = useState(false);
 
-  const players = state.players;
+  const players = state.session?.players ?? [];
   const pair = state.session?.pair ?? null;
 
   const reveal = useCallback(
     (index: number) => {
-      if (!state.session) return;
-
       const playersUpdated: PlayerWithRole[] = players.map((p, i) => (i === index ? { ...p, revealed: true } : p));
       dispatch({ type: 'SET_PLAYERS', payload: playersUpdated });
 
@@ -42,7 +40,7 @@ export default function GameBoard() {
 
       const winner = checkGameEnd(playersUpdated, pair);
       if (winner) {
-        dispatch({ type: 'SET_SESSION', payload: { ...(state.session || {}), players: playersUpdated, winner } });
+        dispatch({ type: 'SET_SESSION', payload: { ...(state.session || {}), winner } });
         // small delay so UI updates before confetti; debounced writes will avoid extremes
         setTimeout(() => setPlayConfetti(true), 100);
       } else {
@@ -51,7 +49,6 @@ export default function GameBoard() {
           type: 'SET_SESSION',
           payload: {
             ...(state.session || {}),
-            players: playersUpdated,
             revealedCount: playersUpdated.filter((p) => p.revealed).length,
           },
         });
@@ -73,7 +70,6 @@ export default function GameBoard() {
         type: 'SET_SESSION',
         payload: {
           ...(state.session || {}),
-          players: playersRevealed,
           winner: 'mrwhite',
           endedAt: new Date().toISOString(),
         },
@@ -95,7 +91,7 @@ export default function GameBoard() {
         dispatch({ type: 'SET_PLAYERS', payload: updatedPlayers });
         dispatch({
           type: 'SET_SESSION',
-          payload: { ...(state.session || {}), players: updatedPlayers, winner: winnerAfter },
+          payload: { ...(state.session || {}), winner: winnerAfter },
         });
         setTimeout(() => setPlayConfetti(true), 100);
       } else {
@@ -104,7 +100,6 @@ export default function GameBoard() {
           type: 'SET_SESSION',
           payload: {
             ...(state.session || {}),
-            players: updatedPlayers,
             revealedCount: updatedPlayers.filter((p) => p.revealed).length,
           },
         });

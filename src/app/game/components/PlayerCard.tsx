@@ -2,7 +2,7 @@
 import React from 'react';
 import type { PlayerWithRole } from '../types.d';
 
-export default React.memo(function PlayerCard({
+export default function PlayerCard({
   player,
   index,
   onReveal,
@@ -13,7 +13,6 @@ export default React.memo(function PlayerCard({
 }) {
   return (
     <div
-      key={player.id}
       className={`bg-white/10 rounded-lg p-4 text-center cursor-pointer transition-all hover:scale-105 ${player.revealed ? 'ring-2 ring-green-400 bg-green-900/20' : 'hover:bg-white/20'}`}
       onClick={() => !player.revealed && onReveal(index)}
     >
@@ -31,4 +30,4 @@ export default React.memo(function PlayerCard({
       )}
     </div>
   );
-});
+}

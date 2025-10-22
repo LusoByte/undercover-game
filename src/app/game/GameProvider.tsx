@@ -2,9 +2,9 @@
 import React, { createContext, useContext, useReducer, useEffect } from 'react';
 import type { ReactNode } from 'react';
 import usePersistSession from './hooks/usePersistenceSession';
-import type { Action, GameContextValue, State, WordPair } from './types.d';
+import type { Action, GameContextValue, State, WordPair, PlayerWithRole } from './types.d';
 
-const initialState: State = { session: null, players: [], wordpool: [] };
+const initialState: State = { session: null, wordpool: [] };
 
 function reducer(state: State, action: Action): State {
   switch (action.type) {
@@ -16,15 +16,19 @@ function reducer(state: State, action: Action): State {
       return { ...state, session: { ...(state.session || {}), ...action.payload } };
     case 'SET_PAIR':
       return { ...state, session: { ...(state.session || {}), pair: action.payload } };
-    case 'SET_PLAYERS':
-      return { ...state, players: action.payload };
+    case 'SET_PLAYERS': {
+      const players = action.payload as PlayerWithRole[];
+      return { ...state, session: { ...(state.session || {}), players } };
+    }
     case 'ADD_PLAYER': {
-      const p = [...state.players, action.payload];
-      return { ...state, players: p };
+      const existing = state.session?.players ?? [];
+      const p = [...existing, action.payload];
+      return { ...state, session: { ...(state.session || {}), players: p } };
     }
     case 'UPDATE_PLAYER': {
-      const updated = state.players.map((pl, i) => (i === action.payload.index ? action.payload.player : pl));
-      return { ...state, players: updated };
+      const existing = state.session?.players ?? [];
+      const updated = existing.map((pl, i) => (i === action.payload.index ? action.payload.player : pl));
+      return { ...state, session: { ...(state.session || {}), players: updated } };
     }
     case 'SET_WORDPOOL':
       return { ...state, wordpool: action.payload };
@@ -41,11 +45,10 @@ export function GameProvider({ children }: { children: ReactNode }) {
   const [state, dispatch] = useReducer(reducer, initialState);
   const persist = usePersistSession(state.session);
 
-  // On mount restore session if present
   useEffect(() => {
     let mounted = true;
     (async () => {
-      const s = await persist.loadSession();
+      const s = await persist?.loadSession();
       if (!mounted) return;
       if (s) dispatch({ type: 'SET_SESSION', payload: s });
       if (s?.players) dispatch({ type: 'SET_PLAYERS', payload: s.players });
@@ -54,7 +57,7 @@ export function GameProvider({ children }: { children: ReactNode }) {
     return () => {
       mounted = false;
     };
-  }, [persist]);
+  }, []);
 
   // Load wordpool from public folder and store in state.wordpool
   useEffect(() => {

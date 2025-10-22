@@ -12,7 +12,7 @@ export default function Lobby() {
   const [playerCount, setPlayerCount] = useState<number | null>(null);
   const [selectedPair, setSelectedPair] = useState<WordPair | null>(null);
 
-  const players = useMemo(() => state.players, [state.players]);
+  const players = state.session?.players ?? [];
 
   // Initialize a local pair once the wordpool is available, before session exists
   useEffect(() => {
@@ -33,8 +33,6 @@ export default function Lobby() {
       alert('Word pair not ready yet. Please wait a moment.');
       return;
     }
-    console.log('Chosen pair: ', pair);
-    console.log('State pair: ', state.session?.pair);
 
     // determine roles
     const rolesReq = calculateRequiredRoles(playerCount);
@@ -107,10 +105,9 @@ export default function Lobby() {
     const session = {
       ...(state.session || {}),
       startedAt: new Date().toISOString(),
-      players: players,
       pair: pair ?? selectedPair,
     };
-    console.log('Starting game with session:', session);
+
     dispatch({ type: 'SET_SESSION', payload: session });
   }, [playerCount, players, dispatch, state.session, pair, state.wordpool, selectedPair]);
 

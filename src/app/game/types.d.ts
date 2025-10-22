@@ -29,7 +29,6 @@ export type GameSession = {
 
 export type State = {
   session: GameSession | null;
-  players: PlayerWithRole[];
   wordpool: WordPair[];
 };
 
