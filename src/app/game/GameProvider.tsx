@@ -29,7 +29,7 @@ function reducer(state: State, action: Action): State {
     case 'SET_WORDPOOL':
       return { ...state, wordpool: action.payload };
     case 'RESET':
-      return initialState;
+      return { ...initialState, wordpool: state.wordpool };
     default:
       return state;
   }
