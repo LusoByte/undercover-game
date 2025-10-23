@@ -33,14 +33,19 @@ export default function GuessModal({
         <input
           value={guess}
           onChange={(e) => onChangeGuess(e.target.value)}
+          disabled={!!feedback}
           placeholder="Enter your guess"
-          className="w-full px-4 py-2 rounded-lg bg-black/20 border border-white/20 text-white placeholder-white/60 mb-3"
+          className="w-full px-4 py-2 rounded-lg bg-black/20 border border-white/20 text-white placeholder-white/60 mb-3 "
         />
 
         {feedback && <div className="text-sm text-yellow-300 mb-2">{feedback}</div>}
 
         <div className="flex gap-2 justify-center">
-          <button onClick={onSubmit} className="px-4 py-2 bg-green-600 hover:bg-green-700 rounded-lg font-medium">
+          <button
+            onClick={onSubmit}
+            disabled={!!feedback}
+            className="px-4 py-2 bg-green-600 hover:bg-green-700 disabled:opacity-50 disabled:cursor-not-allowed rounded-lg font-medium"
+          >
             Submit Guess
           </button>
           <button onClick={onClose} className="px-4 py-2 bg-gray-600 hover:bg-gray-700 rounded-lg font-medium">

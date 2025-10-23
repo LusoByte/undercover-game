@@ -108,7 +108,7 @@ export default function Lobby() {
       startedAt: new Date().toISOString(),
       pair: pair ?? selectedPair,
     };
-    console.log('Starting game with session: ', session);
+
     dispatch({ type: 'SET_SESSION', payload: session });
   }, [playerCount, players, dispatch, state.session, pair, state.wordpool, selectedPair]);
 

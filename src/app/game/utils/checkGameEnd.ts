@@ -7,14 +7,14 @@ export function checkGameEnd(players: PlayerRolesRevealed[], pair: WordPairRevea
   const civilianAlive = players.some((p) => p.role === 'civilian' && !p.revealed);
   const mrwhiteAlive = players.some((p) => p.role === 'mrwhite' && !p.revealed);
 
+  // If no undercovers and no mrwhite remain -> civilians win
+  if (!undercoverAlive && !mrwhiteAlive && civilianAlive) return 'civilian';
+
   // If only Mr. White remains
   if (!civilianAlive && !undercoverAlive && mrwhiteAlive) return 'mrwhite';
 
   // If no civilians remain but at least one undercover remains -> undercover wins
-  if (!civilianAlive && undercoverAlive) return 'undercover';
-
-  // If no undercovers and no mrwhite remain -> civilians win
-  if (!undercoverAlive && !mrwhiteAlive && civilianAlive) return 'civilian';
+  if (!civilianAlive && !mrwhiteAlive) return 'undercover';
 
   return null;
 }

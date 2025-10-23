@@ -91,7 +91,7 @@ export default function Confetti({ play }: { play: boolean }) {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
-          className="pointer-events-none fixed inset-0 z-[9999] overflow-hidden"
+          className="pointer-events-none fixed inset-0 z-[9999] overflow-hidden bg-black/60"
         >
           {confettiPieces.map((piece) => (
             <motion.div
