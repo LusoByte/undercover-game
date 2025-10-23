@@ -1,7 +1,6 @@
 'use client';
 import React, { useCallback, useState } from 'react';
 import { useGame } from '../GameProvider';
-import Confetti from './Confetti';
 import type { PlayerWithRole } from '../types.d';
 import GuessModal from './modals/GuessModal';
 import PlayerCard from './PlayerCard';
@@ -20,7 +19,6 @@ export default function GameBoard() {
     guess: '',
     feedback: undefined,
   });
-  const [playConfetti, setPlayConfetti] = useState(false);
 
   const players = state.session?.players ?? [];
   const pair = state.session?.pair ?? null;
@@ -55,8 +53,6 @@ export default function GameBoard() {
             winner,
           },
         });
-        // small delay so UI updates before confetti; debounced writes will avoid extremes
-        setTimeout(() => setPlayConfetti(true), 100);
       } else {
         // update session players & revealedCount
         dispatch({
@@ -91,7 +87,6 @@ export default function GameBoard() {
       });
 
       setGuessModal({ open: false, playerIndex: null, guess: '', feedback: undefined });
-      setTimeout(() => setPlayConfetti(true), 100);
       return;
     }
 
@@ -107,7 +102,6 @@ export default function GameBoard() {
           type: 'SET_SESSION',
           payload: { ...(state.session || {}), players: updatedPlayers, winner: winnerAfter },
         });
-        setTimeout(() => setPlayConfetti(true), 100);
       } else {
         dispatch({
           type: 'SET_SESSION',
@@ -168,8 +162,6 @@ export default function GameBoard() {
         onSubmit={submitMrWhiteGuess}
         onClose={closeGuessModal}
       />
-
-      <Confetti play={playConfetti} />
     </div>
   );
 }

@@ -84,9 +84,10 @@ export default function Lobby() {
       role: selectedRole,
       word,
     };
+
     dispatch({ type: 'ADD_PLAYER', payload: newPlayer });
     setNameInput('');
-  }, [nameInput, playerCount, dispatch, players, pair, state.session?.pair]);
+  }, [nameInput, playerCount, dispatch, players, pair]);
 
   const startGame = useCallback(() => {
     if (!playerCount) return;
@@ -107,7 +108,7 @@ export default function Lobby() {
       startedAt: new Date().toISOString(),
       pair: pair ?? selectedPair,
     };
-
+    console.log('Starting game with session: ', session);
     dispatch({ type: 'SET_SESSION', payload: session });
   }, [playerCount, players, dispatch, state.session, pair, state.wordpool, selectedPair]);
 

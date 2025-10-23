@@ -51,8 +51,6 @@ export function GameProvider({ children }: { children: ReactNode }) {
       const s = await persist?.loadSession();
       if (!mounted) return;
       if (s) dispatch({ type: 'SET_SESSION', payload: s });
-      if (s?.players) dispatch({ type: 'SET_PLAYERS', payload: s.players });
-      if (s?.pair) dispatch({ type: 'SET_PAIR', payload: s.pair });
     })();
     return () => {
       mounted = false;

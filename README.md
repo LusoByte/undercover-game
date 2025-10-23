@@ -21,8 +21,8 @@ Play with friends on your phone or browser — no downloads required.
 ## 🛠️ Tech Stack
 
 - **Frontend**: [Next.js](https://nextjs.org/) (React, TypeScript)
-- **Styling**: TailwindCSS + ShadCN UI
-- **Animations**: Lottie
+- **Styling**: TailwindCSS
+- **Animations**: Framer Motion
 - **Database**: IndexedDB (local persistence)
 
 ---
@@ -42,7 +42,6 @@ cd undercover-game
 ```
 
 ```bash
-cd frontend
 npm install
 npm run dev
 ```
