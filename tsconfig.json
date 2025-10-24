@@ -10,9 +10,10 @@
     "moduleResolution": "bundler",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "jsx": "preserve",
+    "jsx": "react-jsx",
     "incremental": true,
     "forceConsistentCasingInFileNames": true,
+    "types": ["vitest/globals", "node"],
     "plugins": [
       {
         "name": "next"
