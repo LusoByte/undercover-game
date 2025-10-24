@@ -10,13 +10,13 @@ export type WordPairRevealed = WordPair | null;
 export type PlayerWithRole = {
   id: number;
   name: string;
-  role: Roles.Civilian | Roles.Undercover | 'mrwhite';
+  role: Roles.Civilian | Roles.Undercover | Roles.MrWhite;
   word: string | null;
   revealed: boolean;
 };
 
 export type PlayerRolesRevealed = {
-  role: Roles.Civilian | Roles.Undercover | 'mrwhite';
+  role: Roles.Civilian | Roles.Undercover | Roles.MrWhite;
   revealed: boolean;
 };
 
@@ -26,7 +26,7 @@ export type GameSession = {
   pair?: WordPair | null;
   players?: PlayerWithRole[];
   revealedCount?: number;
-  winner?: Roles.Civilian | Roles.Undercover | 'mrwhite' | null;
+  winner?: Roles.Civilian | Roles.Undercover | Roles.MrWhite | null;
 };
 
 export type State = {
