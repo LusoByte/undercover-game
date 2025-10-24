@@ -1,5 +1,6 @@
 'use client';
 import React, { useCallback, useState } from 'react';
+import { Roles } from '../enums';
 import { useGame } from '../GameProvider';
 import type { PlayerWithRole } from '../types.d';
 import GuessModal from './modals/GuessModal';
@@ -30,7 +31,7 @@ export default function GameBoard() {
       const revealedPlayer = playersUpdated[index];
 
       // If Mr. White is revealed, open guess modal
-      if (revealedPlayer.role === 'mrwhite') {
+      if (revealedPlayer.role === Roles.MrWhite) {
         dispatch({
           type: 'SET_SESSION',
           payload: {
@@ -81,7 +82,7 @@ export default function GameBoard() {
         payload: {
           ...(state.session || {}),
           players: playersRevealed,
-          winner: 'mrwhite',
+          winner: Roles.MrWhite,
           endedAt: new Date().toISOString(),
         },
       });
@@ -146,10 +147,10 @@ export default function GameBoard() {
       {state.session?.winner && (
         <div className="mt-6 text-center">
           <div className="text-2xl font-bold mb-2">
-            {state.session.winner === 'mrwhite' ? 'The Mr. White player won!' : 'Game Complete!'}
+            {state.session.winner === Roles.MrWhite ? 'The Mr. White player won!' : 'Game Complete!'}
           </div>
-          {state.session.winner === 'undercover' && <div className="text-lg">The undercover player won!</div>}
-          {state.session.winner === 'civilian' && <div className="text-lg">The civilians won!</div>}
+          {state.session.winner === Roles.Undercover && <div className="text-lg">The undercover player won!</div>}
+          {state.session.winner === Roles.Civilian && <div className="text-lg">The civilians won!</div>}
         </div>
       )}
 

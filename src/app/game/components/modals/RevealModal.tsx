@@ -1,5 +1,6 @@
 'use client';
 import React from 'react';
+import { Roles } from '../../enums';
 import type { PlayerWithRole } from '../../types.d';
 
 export default function RevealModal({
@@ -14,7 +15,7 @@ export default function RevealModal({
   if (!open || !player) return null;
   function titleCaseRole(r: string | null | undefined) {
     if (!r) return '';
-    if (r.toLowerCase() === 'mrwhite') return 'Mr. White';
+    if (r === Roles.MrWhite) return 'Mr. White';
     return r.charAt(0).toUpperCase() + r.slice(1);
   }
 
@@ -29,9 +30,9 @@ export default function RevealModal({
           className="inline-block px-4 py-2 rounded-full mb-4 text-sm font-medium"
           style={{
             background:
-              player.role === 'undercover'
+              player.role === Roles.Undercover
                 ? 'rgba(220,38,38,0.2)'
-                : player.role === 'mrwhite'
+                : player.role === Roles.MrWhite
                   ? 'rgba(234,179,8,0.15)'
                   : 'rgba(34,197,94,0.15)',
           }}
@@ -39,7 +40,7 @@ export default function RevealModal({
           {titleCaseRole(player.role)}
         </div>
 
-        {player.role === 'mrwhite' ? (
+        {player.role === Roles.MrWhite ? (
           <div className="text-sm italic mb-4">
             You are <strong>Mr. White</strong>.
           </div>

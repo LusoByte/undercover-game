@@ -1,5 +1,6 @@
 'use client';
 import React, { useState, useMemo, useCallback, useEffect } from 'react';
+import { Roles } from '../enums';
 import { useGame } from '../GameProvider';
 import type { PlayerWithRole, WordPair } from '../types.d';
 import WelcomeModal from './modals/WelcomeModal';
@@ -37,13 +38,13 @@ export default function Lobby() {
     // determine roles
     const rolesReq = calculateRequiredRoles(playerCount);
     const currentRoles = {
-      civilian: players.filter((p) => p.role === 'civilian').length,
-      undercover: players.filter((p) => p.role === 'undercover').length,
-      mrwhite: players.filter((p) => p.role === 'mrwhite').length,
+      civilian: players.filter((p) => p.role === Roles.Civilian).length,
+      undercover: players.filter((p) => p.role === Roles.Undercover).length,
+      mrwhite: players.filter((p) => p.role === Roles.MrWhite).length,
     };
 
     // Create weighted role assignment for better distribution
-    const roleWeights: Array<{ role: 'civilian' | 'undercover' | 'mrwhite'; weight: number }> = [];
+    const roleWeights: Array<{ role: Roles.Civilian | Roles.Undercover | Roles.MrWhite; weight: number }> = [];
 
     // Calculate weights based on how many more roles are needed
     const remainingMrWhite = rolesReq.mrwhite - currentRoles.mrwhite;
@@ -53,20 +54,20 @@ export default function Lobby() {
     // Add roles with weights proportional to how many are still needed
     // Mr. White cannot be assigned to the first player
     if (remainingMrWhite > 0 && players.length > 0) {
-      roleWeights.push({ role: 'mrwhite', weight: remainingMrWhite });
+      roleWeights.push({ role: Roles.MrWhite, weight: remainingMrWhite });
     }
     if (remainingUndercover > 0) {
-      roleWeights.push({ role: 'undercover', weight: remainingUndercover });
+      roleWeights.push({ role: Roles.Undercover, weight: remainingUndercover });
     }
     if (remainingCivilian > 0) {
-      roleWeights.push({ role: 'civilian', weight: remainingCivilian });
+      roleWeights.push({ role: Roles.Civilian, weight: remainingCivilian });
     }
 
     // Weighted random selection
     const totalWeight = roleWeights.reduce((sum, item) => sum + item.weight, 0);
     let random = Math.random() * totalWeight;
 
-    let selectedRole: 'civilian' | 'undercover' | 'mrwhite' = 'civilian';
+    let selectedRole: Roles.Civilian | Roles.Undercover | Roles.MrWhite = Roles.Civilian;
     for (const item of roleWeights) {
       random -= item.weight;
       if (random <= 0) {
@@ -75,7 +76,8 @@ export default function Lobby() {
       }
     }
 
-    const word = selectedRole === 'undercover' ? pair.undercover : selectedRole === 'civilian' ? pair.civilian : null;
+    const word =
+      selectedRole === Roles.Undercover ? pair.undercover : selectedRole === Roles.Civilian ? pair.civilian : null;
 
     const newPlayer: PlayerWithRole = {
       id: Math.random(),

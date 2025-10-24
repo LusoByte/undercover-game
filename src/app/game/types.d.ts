@@ -1,3 +1,5 @@
+import { Roles } from './enums';
+
 export interface WordPair {
   civilian: string;
   undercover: string;
@@ -8,13 +10,13 @@ export type WordPairRevealed = WordPair | null;
 export type PlayerWithRole = {
   id: number;
   name: string;
-  role: 'civilian' | 'undercover' | 'mrwhite';
+  role: Roles.Civilian | Roles.Undercover | 'mrwhite';
   word: string | null;
   revealed: boolean;
 };
 
 export type PlayerRolesRevealed = {
-  role: 'civilian' | 'undercover' | 'mrwhite';
+  role: Roles.Civilian | Roles.Undercover | 'mrwhite';
   revealed: boolean;
 };
 
@@ -24,7 +26,7 @@ export type GameSession = {
   pair?: WordPair | null;
   players?: PlayerWithRole[];
   revealedCount?: number;
-  winner?: 'civilian' | 'undercover' | 'mrwhite' | null;
+  winner?: Roles.Civilian | Roles.Undercover | 'mrwhite' | null;
 };
 
 export type State = {

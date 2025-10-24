@@ -1,5 +1,6 @@
 'use client';
 import React from 'react';
+import { Roles } from '../enums';
 import type { PlayerWithRole } from '../types.d';
 
 export default function PlayerCard({
@@ -20,9 +21,9 @@ export default function PlayerCard({
       {player.revealed ? (
         <div className="space-y-2">
           <div
-            className={`text-sm px-2 py-1 rounded-full ${player.role === 'undercover' ? 'bg-red-600' : player.role === 'mrwhite' ? 'bg-yellow-600' : 'bg-green-600'}`}
+            className={`text-sm px-2 py-1 rounded-full ${player.role === Roles.Undercover ? 'bg-red-600' : player.role === Roles.MrWhite ? 'bg-yellow-600' : 'bg-green-600'}`}
           >
-            {player.role === 'undercover' ? 'Undercover' : player.role === 'mrwhite' ? 'Mr. White' : 'Civilian'}
+            {player.role === Roles.Undercover ? 'Undercover' : player.role === Roles.MrWhite ? 'Mr. White' : 'Civilian'}
           </div>
         </div>
       ) : (
