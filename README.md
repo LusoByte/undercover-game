@@ -1,36 +1,37 @@
 # 🔎 Undercover Game (PWA)
 
 A modern web adaptation of the popular party game **“Undercover”** built with **Next.js** (PWA).  
-Play with friends on your phone or browser — no downloads required.  
+Play with friends on your phone or browser — no downloads required.
 
 ---
 
 ## ✨ Features
 
-- 🎭 **Roles**: Civilians, Undercover, and Mr. White  
-- 🗣️ **Word Pair System**: Civilians and Undercover get similar words, while Mr. White guesses without a word  
-- 📱 **Cross-Platform PWA**: Add to home screen & play like a native app  
-- 🔀 **Smart Role Assignment**: Guarantees exactly one Undercover & one Mr. White per session  
+- 🎭 **Roles**: Civilians, Undercover, and Mr. White
+- 🗣️ **Word Pair System**: Civilians and Undercover get similar words, while Mr. White guesses without a word
+- 📱 **Cross-Platform PWA**: Add to home screen & play like a native app
+- 🔀 **Smart Role Assignment**: Guarantees exactly one Undercover & one Mr. White per session
 - 🏆 **Win Conditions**:
-  - Civilians win if Undercover is found  
-  - Undercover wins if all Civilians are out  
-  - Mr. White wins if Civilians + Undercover are eliminated  
+  - Civilians win if Undercover is found
+  - Undercover wins if all Civilians are out
+  - Mr. White wins if Civilians + Undercover are eliminated
 
 ---
 
 ## 🛠️ Tech Stack
 
-- **Frontend**: [Next.js](https://nextjs.org/) (React, TypeScript)  
-- **Styling**: TailwindCSS + ShadCN UI  
-- **Animations**: Lottie  
-- **Database**: IndexedDB (local persistence)  
+- **Frontend**: [Next.js](https://nextjs.org/) (React, TypeScript)
+- **Styling**: TailwindCSS
+- **Animations**: Framer Motion
+- **Database**: IndexedDB (local persistence)
 
 ---
 
 ## 🏃 Getting Started (Local)
 
 ### Prerequisites
-- Node.js ≥ 18  
+
+- Node.js ≥ 18
 
 ### Setup
 
@@ -41,7 +42,6 @@ cd undercover-game
 ```
 
 ```bash
-cd frontend
 npm install
 npm run dev
 ```
@@ -65,7 +65,6 @@ npm run dev
 - Tap your name to reveal your role & word (private modal)
 - Discuss, accuse, and vote players out
 - The game engine tracks roles and determines the winner 🎉
-
 
 ---
 
