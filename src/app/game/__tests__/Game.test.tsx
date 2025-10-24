@@ -1,4 +1,3 @@
-// src/app/game/Game.test.tsx
 import React, { createElement, createContext, useState } from 'react';
 import { vi, afterEach, describe, it, expect } from 'vitest';
 import { render, screen, waitFor, cleanup } from '@testing-library/react';

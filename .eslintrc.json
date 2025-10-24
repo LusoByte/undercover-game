@@ -56,5 +56,5 @@
       }
     ]
   },
-  "ignorePatterns": [".next/", "node_modules/", "out/"]
+  "ignorePatterns": [".next/", "node_modules/", "out/", "__tests__"]
 }

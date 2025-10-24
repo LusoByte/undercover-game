@@ -1,5 +1,6 @@
+import React from 'react';
 import { vi, beforeEach, afterEach, describe, it, expect } from 'vitest';
-import { act, render, screen, waitFor, cleanup, waitForElementToBeRemoved } from '@testing-library/react';
+import { render, screen, cleanup, waitForElementToBeRemoved } from '@testing-library/react';
 
 // Mock framer-motion so animations don't run and to give us testable hooks into the DOM.
 // We detect different motion.div usages by inspecting props (className / style) and add testids:

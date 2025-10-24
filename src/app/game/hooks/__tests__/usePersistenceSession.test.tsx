@@ -24,8 +24,7 @@ vi.mock('idb', () => {
   };
 });
 
-// Import the hook AFTER mocking 'idb'
-import usePersistSession from './usePersistenceSession';
+import usePersistSession from '../usePersistenceSession';
 
 // A small harness component that calls the hook and exposes returned helpers on window
 function HookHarness({ session }: { session: any | null }) {
