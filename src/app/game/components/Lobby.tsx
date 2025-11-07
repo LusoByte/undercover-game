@@ -5,11 +5,13 @@ import { useGame } from '../GameProvider';
 import type { PlayerWithRole, WordPair } from '../types.d';
 import WelcomeModal from './modals/WelcomeModal';
 import { calculateRequiredRoles } from '../utils/calculateRequiredRoles';
+import RevealModal from './modals/RevealModal';
 
 export default function Lobby() {
   const { state, dispatch } = useGame();
   const [nameInput, setNameInput] = useState('');
   const [welcomeOpen, setWelcomeOpen] = useState(state.session === null);
+  const [revealOpen, setRevealOpen] = useState<PlayerWithRole | null>(null);
   const [playerCount, setPlayerCount] = useState<number | null>(null);
   const [selectedPair, setSelectedPair] = useState<WordPair | null>(null);
 
@@ -88,6 +90,7 @@ export default function Lobby() {
     };
 
     dispatch({ type: 'ADD_PLAYER', payload: newPlayer });
+    setRevealOpen(newPlayer);
     setNameInput('');
   }, [nameInput, playerCount, dispatch, players, pair]);
 
@@ -193,6 +196,8 @@ export default function Lobby() {
           </button>
         </div>
       )}
+
+      <RevealModal open={revealOpen !== null} onClose={() => setRevealOpen(null)} player={revealOpen} />
     </div>
   );
 }

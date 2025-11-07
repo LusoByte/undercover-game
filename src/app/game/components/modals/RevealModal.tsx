@@ -45,7 +45,7 @@ export default function RevealModal({
             You are <strong>Mr. White</strong>.
           </div>
         ) : (
-          <div className="text-lg font-bold mb-4">Your word: `&quot;`{player.word}`&quot;`</div>
+          <div className="text-lg font-bold mb-4">Your word: &quot;{player.word}&quot;</div>
         )}
 
         <button onClick={onClose} className="mt-2 px-6 py-2 bg-blue-600 hover:bg-blue-700 rounded-lg font-medium">
