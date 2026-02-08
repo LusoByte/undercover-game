@@ -120,7 +120,7 @@ export default function Lobby() {
   const rolesSummary = useMemo(() => (playerCount ? calculateRequiredRoles(playerCount) : null), [playerCount]);
 
   return (
-    <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6">
+    <div className="bg-white/10 backdrop-blur-sm rounded-lg">
       <WelcomeModal
         open={welcomeOpen}
         onSelect={(n) => {
